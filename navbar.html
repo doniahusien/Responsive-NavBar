@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://css.gg/open-collective.css' rel='stylesheet'>
+    <title>Nav</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+    <nav id="mynav">
+        <i id="boot" class="fa-brands fa-bootstrap"></i>
+        <i style="color: #efd2ff;;" class="fa-solid fa-bars"></i>
+     </nav>
+     <div class="cont hide">
+        <ul class="links">
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Doc</a></li>
+            <li> <a href="#">Examples</a></li>
+            <li> <a href="#">Themes</a></li>
+            <li> <a href="#">Expo</a></li>
+            <li> <a href="#">About</a></li>
+        </ul> 
+        <div class="icons">
+                <a href="#"><i class="fa-brands fa-github"> </i> <span>GitHub</span></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> <span>Twitter</span> </a>
+                <a  href="#"><i style="display: inline-block;" class="gg-open-collective"></i> <span> Open collective</span></a>
+        </div>
+        <button id="down">Download</button>
+     </div>       
+    </header>
+    <script>
+        const  down = document.querySelector(".fa-bars");
+        const cont = document.querySelector(".cont");
+        down.addEventListener("click",()=>{
+            cont.classList.toggle("hide");
+            down.style.color="white"
+        })
+    </script>
+    
+</body>
+</html>
